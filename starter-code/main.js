@@ -2,7 +2,7 @@ var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
 var resetButton = document.querySelector('button');
 var scoreCounter = 0;
-var resetCards = document.getElementsByClassName("flipped");
+
 
 createBoard();
 
@@ -63,6 +63,8 @@ function isTwoCards () {
 }
 
 function resetBoard() {
+	var resetCards = document.getElementsByClassName("flipped");
+
 	for (i = 0; i < resetCards.length; i++) {
 		resetCards[i].innerHTML = ' ';
 		resetCards[i].className = 'card';
