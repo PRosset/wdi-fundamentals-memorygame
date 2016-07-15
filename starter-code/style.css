@@ -14,8 +14,9 @@ body, footer {
 	text-align: center;
 }
 p {
-	width: 480px;
-	vertical-align: center;
+	width: 500px;
+	margin: auto;
+	text-align: center;
 }
 .navlink {
 	background: #ffbf00;
@@ -30,9 +31,18 @@ p {
 }
 .board {
 	display: inline-block;
+	margin: 10px auto;
 	height: 50%;
 	width: 50%;
-	float: left;
+	text-align: center;
+	vertical-align: center;
+	/*float: left;*/
+}
+img {
+	height: 100px;
+	width: 75px;
+	padding: 3em 2em 3em 2em;
+	margin: auto 0;
 }
 .card {
 	display: inline-block;
@@ -41,7 +51,21 @@ p {
 	background: yellow;
 	border: 1px solid black;
 	border-radius: 10px;
-	margin: 8%;
+	margin: 5%;
+	float: left;
+}
+.card:hover {
+	background: #cccc00;
+}
+.flipped {
+	display: inline-block;
+	height: 200px;
+	width: 150px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 5%;
+	float: left;
 }
 .clearfix:after {
 	visibility: hidden;
@@ -54,7 +78,34 @@ p {
 .name {
 	color: #ff0000;
 }
+#score {
+	font-size: 26px;
+	font-weight: bold;
+	padding: 20px 0px 0px 0px;
+}
+button {
+	background-color: #ffbf00; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px #ca9a0d;
+}
+button:hover {
+	background: #ee5f3c;
+	box-shadow: 0 4px #c95032;
+}
+button:active {
+	box-shadow: 0 0px #a4462e;
+	transform: translateY(4px);
+}
 footer {
 	background: #808080;
+	padding: 10px;
 	clear: both;
 }
