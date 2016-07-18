@@ -65,9 +65,14 @@ function isTwoCards () {
 function resetBoard() {
 	var resetCards = document.getElementsByClassName("flipped");
 
-	for (i = 0; i < resetCards.length; i++) {
-		resetCards[i].innerHTML = ' ';
-		resetCards[i].className = 'card';
+	// for (i = 0; i < resetCards.length; i++) {
+	// 	resetCards[i].innerHTML = ' ';
+	// 	resetCards[i].className = 'card';
+	// }
+
+	while (resetCards.length > 0) {
+ 		resetCards[0].innerHTML = ' ';
+ 		resetCards[0].className = 'card';
 	}
 
 	resetCards = [];
